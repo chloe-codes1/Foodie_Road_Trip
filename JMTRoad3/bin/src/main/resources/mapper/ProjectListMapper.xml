@@ -23,6 +23,43 @@
 
 </select>
 
+<!-- 묘음 -->
+<select id="projectList" resultType="ProjectVO">
+  		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
+		from project p, users u, OwnerStore o, projectDetail pd
+		where p.userNo=u.userNo 
+		and p.open = 1
+		and p.projectStatus = 71 
+		and pd.projectNo = p.projectNo
+		and o.ownerNo = pd.ownerNo
+		and pd.routeNo = 1
+  	</select>
+  	
+  	<select id="hotProjectList" resultType="ProjectVO">
+  		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
+		from project p, users u, OwnerStore o, projectDetail pd
+		where p.userNo=u.userNo 
+		and p.open = 1
+		and p.projectStatus = 71 
+		and pd.projectNo = p.projectNo
+		and o.ownerNo = pd.ownerNo
+		and pd.routeNo = 1
+		order by p.read desc limit 5
+  	</select>
+  	
+  	<select id="newProjectList" resultType="ProjectVO">
+  		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
+		from project p, users u, OwnerStore o, projectDetail pd
+		where p.userNo=u.userNo 
+		and p.open = 1
+		and p.projectStatus = 71 
+		and pd.projectNo = p.projectNo
+		and o.ownerNo = pd.ownerNo
+		and pd.routeNo = 1
+		order by p.regDate desc limit 5
+  	</select> 
+
+
 
 
 </mapper>
