@@ -1,5 +1,5 @@
 import React from 'react';
-import ErrorBoundary from 'react-error-boundary-component-fallback2';
+import ErrorBoundary from 'react-error-boundaries';
 import ChatMessageBox from './ChatMessageBox/ChatMessageBox';
 import withLogin from "../login/LoginHOC";
 

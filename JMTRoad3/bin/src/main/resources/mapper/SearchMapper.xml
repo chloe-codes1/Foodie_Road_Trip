@@ -6,16 +6,16 @@
 <mapper namespace="bit.yam.service.SearchMapper">
 
 <select id="searchByName" parameterType="String" resultType="OwnerVO">
-	SELECT*FROM OwnerStore WHERE storeName LIKE CONCAT('%',#{storeName},'%')
+	SELECT*FROM ownerstore WHERE storeName LIKE CONCAT('%',#{storeName},'%')
 </select>
 
 
 <select id="searchByCuisine" parameterType="int" resultType="OwnerVO">
-	SELECT*FROM OwnerStore WHERE cuisine = #{cuisine}
+	SELECT*FROM ownerstore WHERE cuisine = #{cuisine}
 </select>
 
 <select id="searchBothOfThem" parameterType="map" resultType="OwnerVO">
-	SELECT*FROM OwnerStore WHERE storeName LIKE CONCAT('%',#{storeName},'%') AND cuisine = #{cuisine}
+	SELECT*FROM ownerstore WHERE storeName LIKE CONCAT('%',#{storeName},'%') AND cuisine = #{cuisine}
 </select>
 
 <select id="searchUser" parameterType="String" resultType="UserVO">

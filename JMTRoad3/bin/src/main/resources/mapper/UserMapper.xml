@@ -6,7 +6,7 @@
 <mapper namespace="bit.yam.service.UserMapper">
 	
 <update id="updateUser" parameterType="UserVO">
-	UPDATE Users SET nickname = #{nickname}, phone = #{phone}, birthday = #{birthday}, gender = #{gender}, shareLocation = #{shareLocation}
+	UPDATE Users SET nickname = #{nickname}, phone = #{phone}, birthday = #{birthday}, gender = #{gender}, shareLocation = #{shareLocation}, age = #{age}
 	WHERE userID = #{userID}
 </update>	
 	
@@ -19,7 +19,7 @@
 </update>
 
 <select id="getLikedStoreList" parameterType="int" resultType="OwnerVO">
-	SELECT * FROM OwnerStore WHERE ownerNo IN (SELECT ownerNo FROM StoreLike WHERE userNo = #{userNo})
+	SELECT * FROM ownerstore WHERE ownerNo IN (SELECT ownerNo FROM StoreLike WHERE userNo = #{userNo})
 </select>
 
 <select id="followingList" parameterType="int" resultType="UserVO">
@@ -61,5 +61,6 @@
 		SELECT * FROM Users
 		WHERE userNo=#{userNo}
 	</select>
+	
 
 </mapper>
