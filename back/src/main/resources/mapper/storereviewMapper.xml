@@ -7,24 +7,24 @@
 	<!-- 별 점 순 위 -->
 	<select id="starCount" resultType="int">
 		SELECT storereviewNo,
-		nickname, userNo, star, ROW_NUMBER() OVER (ORDER BY star DESC) AS RankNo FROM storereview;
+		nickname, userNo, star, ROW_NUMBER() OVER (ORDER BY star DESC) AS RankNo FROM StoreReview;
 	</select>
 
 	<!-- 가게 좋아요 순 위 -->
 	<select id="storelikeCount" resultType="int">
 		SELECT storereviewNo,
-		nickname, userNo, ROW_NUMBER() OVER (ORDER BY storelike DESC) AS RankNo FROM storereview;
+		nickname, userNo, ROW_NUMBER() OVER (ORDER BY storelike DESC) AS RankNo FROM StoreReview;
 	</select>
 
 	<!-- 음식점 리뷰(ownerNo에 맞추어 부르기) -->
 	<select id="storereviewOwnerNo" resultType="bit.yam.bean.StoreReview">
-		select * from storereview where ownerNo=#{ownerNo};
+		select * from StoreReview where ownerNo=#{ownerNo};
 	</select>
 
 	<select id="getStoreReviewList" parameterType="int" 
 		resultType="bit.yam.bean.StoreReviewVO">
 		
-		SELECT * FROM storereview
+		SELECT * FROM StoreReview
 		WHERE ownerNo=#{ownerNo}
 		
 	</select>

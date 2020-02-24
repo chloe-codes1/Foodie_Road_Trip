@@ -5,12 +5,12 @@
 <mapper namespace="bit.yam.service.ReviewMapper">
 	
 	<select id="ownerReviewList" resultType="bit.yam.bean.StoreReview">
-		select * from storereview where ownerNo=#{ownerNo};
+		select * from StorereView where ownerNo=#{ownerNo};
 	</select>
 
 	
 	<select id="countwaiting">
-		select count(*) from waiting where ownerNo=#{ownerNo}
+		select count(*) from Waiting where ownerNo=#{ownerNo}
 	</select>
 		
 </mapper>
