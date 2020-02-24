@@ -26,7 +26,7 @@
 <!-- 묘음 -->
 <select id="projectList" resultType="ProjectVO">
   		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
-		from project p, users u, OwnerStore o, projectDetail pd
+		from Project p, Users u, ownerstore o, ProjectDetail pd
 		where p.userNo=u.userNo 
 		and p.open = 1
 		and p.projectStatus = 71 
@@ -37,7 +37,7 @@
   	
   	<select id="hotProjectList" resultType="ProjectVO">
   		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
-		from project p, users u, OwnerStore o, projectDetail pd
+		from Project p, Users u, ownerstore o, ProjectDetail pd
 		where p.userNo=u.userNo 
 		and p.open = 1
 		and p.projectStatus = 71 
@@ -49,7 +49,7 @@
   	
   	<select id="newProjectList" resultType="ProjectVO">
   		select p.projectNo, u.nickname, p.title, p.regDate, p.meetingDate, p.totalExpense, p.read, p.buddies, o.menuImg
-		from project p, users u, OwnerStore o, projectDetail pd
+		from Project p, Users u, ownerstore o, ProjectDetail pd
 		where p.userNo=u.userNo 
 		and p.open = 1
 		and p.projectStatus = 71 

@@ -10,7 +10,7 @@
  	
  	<select id="listProjectDetail" resultType="ProjectDetailVO" parameterType="int">
  		select p.projectNo, p.ownerNo, p.routeNo, p.estimate, p.payment, p.memo, o.storeName, o.menuImg, pr.userNo
-		from projectdetail p, ownerstore o, project pr
+		from ProjectDetail p, ownerstore o, Project pr
 		where p.projectNo = pr.projectNo 
 		and p.ownerNo = o.ownerNo
 		and p.projectNo = #{projectNo} 

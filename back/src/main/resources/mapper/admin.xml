@@ -6,7 +6,7 @@
     <mapper namespace="bit.yam.service.AdminMapper">
     
    <select id="adminLogin" resultType="int" parameterType="AdminVO">
-    	select * from admin where adminID = #{adminID} and password = #{password}
+    	select * from Admin where adminID = #{adminID} and password = #{password}
     </select>
     
     </mapper>
