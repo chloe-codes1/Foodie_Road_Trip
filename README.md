@@ -12,6 +12,8 @@
 
 <br>
 
+<hr>
+
 ### *맛집의 민족 프로젝트 소개*
 
 <br>
@@ -40,7 +42,7 @@
 
 **DB** : MySQL 
 
-**OS** : Windows, Linux(Ubuntu 18.0.4) 
+**OS** : Windows, Linux (Ubuntu 18.0.4) 
 
 **형상관리** : Git
 
@@ -58,28 +60,17 @@
 
    - Tmap API 를 활용한 사용자 선택 음식점들에 대한 최적화된 경로 제공
 
-   <br>
-
 2. 채팅
 
    : WebSocket을 활용한 오픈 채팅 및 비밀 쪽지 기능 구현
 
-<br>
-
-2. 메인페이지
-
+3. 메인페이지
    - 검색 기능 구현
+   - 사용자 신고/의견 접수를 위한 폼메일 서비스 구현
 
-   -  사용자 신고/의견 접수를 위한 폼메일 서비스 구현
-
-   <br>
-
-3. 마이페이지
-
+4. 마이페이지
    - 개인 정보 수정 기능 (프로필 사진 업로드 등)
-
    - 팔로우 기능 구현
-
    - 퍼가기/좋아요 한 맛집로드/음식점 목록 보기
 
 <br>
@@ -87,12 +78,12 @@
 <br>
 
 #### 자료 링크들
-발표 영상: bit.ly/foodie-video
+- [발표 영상]( https://bit.ly/foodie-video)
 
-발표 ppt: bit.ly/foodie-ppt
+- [발표 ppt](https://bit.ly/foodie-ppt)
 
-시연 영상: bit.ly/foodie-demo-video
+- [시연 영상](https://bit.ly/foodie-demo-video)
 
-팀 공유 드라이브: bit.ly/foodie-google-drive
+- [팀 공유 드라이브](https://bit.ly/foodie-google-drive)
 
-Github: github.com/chloe-codes1/Foodie_Road_Trip
+- [Github](https://github.com/chloe-codes1/Foodie_Road_Trip)
