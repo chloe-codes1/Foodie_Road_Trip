@@ -31,7 +31,7 @@
 		and p.open = 1
 		and p.projectStatus = 71 
 		and pd.projectNo = p.projectNo
-		and o.ownerNo = pd.ownerNo
+		<!-- and o.ownerNo = pd.ownerNo -->
 		and pd.routeNo = 1
   	</select>
   	
@@ -42,7 +42,7 @@
 		and p.open = 1
 		and p.projectStatus = 71 
 		and pd.projectNo = p.projectNo
-		and o.ownerNo = pd.ownerNo
+<!-- 		and o.ownerNo = pd.ownerNo -->
 		and pd.routeNo = 1
 		order by p.read desc limit 5
   	</select>
@@ -54,7 +54,7 @@
 		and p.open = 1
 		and p.projectStatus = 71 
 		and pd.projectNo = p.projectNo
-		and o.ownerNo = pd.ownerNo
+<!-- 		and o.ownerNo = pd.ownerNo -->
 		and pd.routeNo = 1
 		order by p.regDate desc limit 5
   	</select> 

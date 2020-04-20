@@ -30,13 +30,6 @@ class Main extends React.Component {
     };
   }
 
-  // component load 되면 로그인 했다고 가정하고 session에 user 1의 userNo 넣기
-  componentDidMount () {
-    // window.sessionStorage.setItem("userNo", user1)
-    // window.sessionStorage.clear();
-  }
-
-
   openModal = () => {
     this.setState({
       isModalOpen: true

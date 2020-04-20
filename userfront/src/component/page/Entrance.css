@@ -51,15 +51,14 @@
   font-size: 3em;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   width: 460px;
 }
 
 .textContent p{
-  margin-top: 10px;
   font-size: 1.5em;
   text-align: justify;
-  width: 460px;
+  width: 466px;
 }
 
 .bgImage{
@@ -70,12 +69,13 @@
   left: 100px;
 }
 
-.bemypartner{
+.joinus{
   display: inline-block;
   position: relative;
   left: -430px;
   top: 430px;
   margin: 10px;
+  padding-top: 4px;
   color: white;
   background: #f29a2e;
   border-radius: 3px;

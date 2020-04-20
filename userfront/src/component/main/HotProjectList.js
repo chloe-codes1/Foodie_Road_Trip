@@ -11,7 +11,6 @@ class HotProjectList extends Component {
 
     this.setState({
       data: response.data
-
     });
   }
 

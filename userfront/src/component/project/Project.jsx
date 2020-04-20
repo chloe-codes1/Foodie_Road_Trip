@@ -72,7 +72,6 @@ class Project extends React.Component {
     })
       .then(success => {
         const data = success.data;
-        //console.log("음식점 정보를 다 가져왔다하하하" + data);
         this.setState({
           storeInfos: data
         });
@@ -125,8 +124,8 @@ class Project extends React.Component {
 
             console.log(
               "store는 JSON이 맞니? 오 여기서 다 뜨나?" + JSON.stringify(store)
-            ); // -> 맞다고 전해라~
-            console.log("store", store); //캬 추출완료
+            ); 
+            console.log("store", store); 
             console.log(
               "coordinateObject는 JSON이 맞니? " +
                 JSON.stringify(coordinateObject)
@@ -466,7 +465,7 @@ class Project extends React.Component {
       $("#0").remove();
       $("#10").remove();
       $("#100").remove();
-      $("#1000").html("<span> 첫번째 목적지</span>");
+      $("#1000").html("<span > 첫번째 목적지</span>");
       $("#1000")
         .removeClass("hideOrders")
         .addClass("showOrders");
@@ -691,7 +690,6 @@ class Project extends React.Component {
     $("#" + ownerNo + "").attr("id", "도착");
     $("#1" + index + "").html("<span style=\"font-weight: 900;\"> 도착지</span>");
 
-    // 잘 바뀌었는지 확인용! 나중에 지우셈
     for (var j = 0; j < data.length; j++) {
       id.push(data[j].getAttribute("id"));
     }
@@ -846,16 +844,13 @@ class Project extends React.Component {
   };
   
   saveProject = () => {
-    //e.preventDefault();
     const { title, date, totalExpense, storeResult } = this.state;
-    //console.log('너는 누구냐', window.sessionStorage.getItem('userNo'));
     
     let project = {
       userNo: window.sessionStorage.getItem("userNo"),
       title: title,
       meetingDate: date,
       totalExpense: totalExpense,
-      //여기까지
       projectDetail: [{ routeNo: 0, ownerNo: 0 }]
     };
     

@@ -12,6 +12,48 @@
 
 <br>
 
+### Overview
+
+<br>
+
+> Entrance
+
+![](./images/entrance.png)
+
+<br>
+
+> Login
+
+![](./images/login.png)
+
+<br>
+
+> Initiate Chatter
+
+![](./images/start-chat.png)
+
+<br>
+
+> Chat
+
+![](./images/chat.png)
+
+<br>
+
+> Select destinations
+
+![](./images/foodie-road-select.png)
+
+<br>
+
+> Optimized route
+
+![](./images/foodie-road-result.png)
+
+<br>
+
+<br>
+
 <hr>
 
 ### *맛집의 민족 프로젝트 소개*

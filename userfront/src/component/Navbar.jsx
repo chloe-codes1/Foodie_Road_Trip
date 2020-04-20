@@ -32,27 +32,27 @@ class NavBar extends React.Component {
               <p id="title">맛집의 민족<img src={logo} id="logoimg"/></p>
             </Link>
             <Link to="/main" className="Nav_Links">
-              Main
+              HOME
             </Link>
             <Link to="/ownerList" className="Nav_Links">
-              전체 음식점
+              음식점 &nbsp;전체보기
             </Link>
             <Link to="/list" className="Nav_Links">
-              전체 프로젝트
+              유저들의 &nbsp;맛집로드
             </Link>
             <Link to="/project" className="Nav_Links">
-            프로젝트 생성
+            맛집로드 &nbsp;만들기
             </Link>
             <Link to="/chat" className="Nav_Links">
-              Chat
+              채팅
             </Link>
             <Link to="/users" className="Nav_Links">
-              User List
+              다른 &nbsp;유저 &nbsp;구경가기
             </Link>
             
             {(sessionStorage.getItem("adminID") )|| (
             <Link to="/mypage" className="Nav_Links">
-              My Page
+              마이 &nbsp;페이지
             </Link>
             )}
             

@@ -24,7 +24,6 @@ parentCallback = (dataFromChild) => {
   render() {
     return (
       <div>
-        여긴 남의 마이 페이지&nbsp; {this.state.data}
             <div className="Modal-overlay" />
             <div className="Modal">
               <OthersPageProfile history={this.props.history} />

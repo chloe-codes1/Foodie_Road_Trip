@@ -38,8 +38,6 @@ class StorePageComponent extends Component {
     componentDidMount() {
         this.reloadUserList();
         console.log("``````````````````````````````" + this.state.like);
-
-
     }
 
     storeLike = async () => {
@@ -93,22 +91,22 @@ class StorePageComponent extends Component {
             .then((res) => {
                 let owner = res.data;
 
-                if (owner.cuisine == "51") {
+                if (owner.cuisine === "51") {
                     owner.cuisine = "한식";
                 }
-                else if (owner.cuisine == "52") {
+                else if (owner.cuisine === "52") {
                     owner.cuisine = "양식";
                 }
-                else if (owner.cuisine == "53") {
+                else if (owner.cuisine === "53") {
                     owner.cuisine = "중식";
                 }
-                else if (owner.cuisine == "54") {
+                else if (owner.cuisine === "54") {
                     owner.cuisine = "일식";
                 }
-                else if (owner.cuisine == "55") {
+                else if (owner.cuisine === "55") {
                     owner.cuisine = "동남아식";
                 }
-                else if (owner.cuisine == "56") {
+                else if (owner.cuisine === "56") {
                     owner.cuisine = "뷔페식";
                 }
 
@@ -143,7 +141,7 @@ class StorePageComponent extends Component {
                 console.log("didididi", window.localStorage.getItem("ownerNo"))
 
                 {
-                    if ((res.data.ownerNo) == window.localStorage.getItem("ownerNo")) {
+                    if ((res.data.ownerNo) === window.localStorage.getItem("ownerNo")) {
 
                         console.log("test")
                         this.setState({

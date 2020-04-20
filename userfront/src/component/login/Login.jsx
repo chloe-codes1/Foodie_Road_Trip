@@ -97,7 +97,6 @@ class Login extends Component{
     });
     
     console.log('saveUser() 완료')
-    //여기에서 리스트 불러오는걸 해야하나..
   }
 
   doSignUp = () => {
@@ -178,7 +177,7 @@ class Login extends Component{
                 <hr/>
                 {/* 묘음추가 */}
                 {/* <button onClick={this.adminLogin}>관리자 로그인</button> */}
-                <AdminButton 
+         {/*        <AdminButton 
                   onClick={this.adminLogin} 
                   buttonText = "관리자 로그인ㅋㅋㅋ"
                   onSuccess = {this.responseAdmin}
@@ -190,7 +189,7 @@ class Login extends Component{
                   <p>
                     <BtnClose onClick={this.handleCloseModal}>닫기 </BtnClose>
                   </p>
-                </div>
+                </div> */}
               </InnerModal>
             </MyModal>
           </ModalPortal>
