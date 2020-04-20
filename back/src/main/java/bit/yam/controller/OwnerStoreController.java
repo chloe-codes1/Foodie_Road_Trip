@@ -38,13 +38,11 @@ public class OwnerStoreController {
 
 	@PostMapping
 	public void saveUser(@RequestBody OwnerStore user) {
-		
 		 mapper.reg(user);
 	}
 
 	@GetMapping
 	public List<OwnerStore> listUser() {
-		
 		return mapper.storeList();
 	}
 
