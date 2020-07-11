@@ -54,6 +54,16 @@
 
 <br>
 
+### ERD
+
+<br>
+
+![](./images/foodie_road_trip_erd.png)
+
+<br>
+
+<br>
+
 <hr>
 
 ### *맛집의 민족 프로젝트 소개*
