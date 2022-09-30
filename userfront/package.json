@@ -14,7 +14,7 @@
     "create-react-app": "^3.3.0",
     "firebase": "^7.6.1",
     "jquery": "^3.4.1",
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.3",
     "react": "^16.12.0",
     "react-bell-icon": "^1.0.1",
     "react-bootstrap": "^1.0.0-beta.16",
